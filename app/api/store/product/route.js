@@ -5,6 +5,7 @@ import connectDB from '@/lib/mongodb';
 import Product from '@/models/Product';
 import authSeller from "@/middlewares/authSeller";
 import { NextResponse } from "next/server";
+import { getAuth } from '@/lib/firebase-admin';
 
 // Helper: Upload images to ImageKit
 const uploadImages = async (images) => {
