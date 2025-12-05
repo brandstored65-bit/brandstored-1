@@ -4,7 +4,7 @@ export default function TermsAndConditions() {
       <h1 className="text-3xl font-bold mb-6">Terms & Conditions</h1>
 
       <p className="mb-6">
-        Welcome to <strong>quickfynd.com</strong>. By accessing or using our website,
+        Welcome to <strong>Brandstored.com</strong>. By accessing or using our website,
         you agree to follow the Terms & Conditions stated below. Please read them
         carefully. If you do not agree with any part of these terms, you must stop
         using the website immediately.
@@ -13,7 +13,7 @@ export default function TermsAndConditions() {
       {/* Section */}
       <h2 className="text-xl font-semibold mt-6 mb-3">1. General Information</h2>
       <p className="mb-4">
-        quickfynd.com (“we”, “our”, “us”) is an online shopping platform offering a
+        Brandstored.com (“we”, “our”, “us”) is an online shopping platform offering a
         range of products. By using our services, you acknowledge that you are at
         least 18 years old or accessing the website under the supervision of a
         parent or legal guardian.
@@ -34,7 +34,7 @@ export default function TermsAndConditions() {
       <h2 className="text-xl font-semibold mt-6 mb-3">3. Product Information</h2>
       <p className="mb-4">
         We make every effort to ensure product descriptions, images, and details
-        are accurate. However, slight variations may occur. quickfynd.com is not
+        are accurate. However, slight variations may occur. Brandstored.com is not
         responsible for typographical errors, incorrect pricing, or inaccurate
         product data.
       </p>
@@ -43,7 +43,7 @@ export default function TermsAndConditions() {
       <ul className="list-disc ml-6 mb-4">
         <li>All prices listed on the website are inclusive/exclusive of taxes as applicable.</li>
         <li>
-          Payments made on quickfynd.com must be from valid payment methods (Card,
+          Payments made on Brandstored.com must be from valid payment methods (Card,
           UPI, Wallet, EMI, Net Banking depending on availability).
         </li>
         <li>
@@ -67,7 +67,7 @@ export default function TermsAndConditions() {
       <ul className="list-disc ml-6 mb-4">
         <li>Delivery timelines are estimates and may vary depending on location.</li>
         <li>
-          quickfynd.com is not liable for delays caused by logistics partners,
+          Brandstored.com is not liable for delays caused by logistics partners,
           weather conditions, or unforeseen events.
         </li>
         <li>
@@ -94,13 +94,13 @@ export default function TermsAndConditions() {
 
       <h2 className="text-xl font-semibold mt-6 mb-3">9. Intellectual Property</h2>
       <p className="mb-4">
-        All content on quickfynd.com including text, images, logos, design, and
-        graphics are the property of quickfynd.com and protected by applicable laws.
+        All content on Brandstored.com including text, images, logos, design, and
+        graphics are the property of Brandstored.com and protected by applicable laws.
       </p>
 
       <h2 className="text-xl font-semibold mt-6 mb-3">10. Limitation of Liability</h2>
       <p className="mb-4">
-        quickfynd.com is not liable for any indirect, incidental, or consequential
+        Brandstored.com is not liable for any indirect, incidental, or consequential
         damages resulting from the use of our website or products.
       </p>
 
@@ -122,8 +122,8 @@ export default function TermsAndConditions() {
         contact us at:
       </p>
 
-      <p className="font-semibold">Email: support@quickfynd.com</p>
-      <p className="font-semibold mb-10">Website: https://quickfynd.com</p>
+      <p className="font-semibold">Email: support@Brandstored.com</p>
+      <p className="font-semibold mb-10">Website: https://Brandstored.com</p>
     </div>
   );
 }

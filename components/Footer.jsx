@@ -56,7 +56,7 @@ const Footer = () => {
 
     const socialIcons = [
         { icon: FacebookIcon, link: "https://www.facebook.com/profile.php?id=61584513867192" },
-        { icon: InstagramIcon, link: "https://www.instagram.com/quickfynd/" },
+        { icon: InstagramIcon, link: "https://www.instagram.com/Brandstored/" },
     ];
 
     return (
@@ -69,7 +69,7 @@ const Footer = () => {
                         <Link href="/" className="inline-block mb-4">
                             <Image
                                 src={Logo}
-                                alt="Quickfynd Logo"
+                                alt="Brandstored Logo"
                                 width={160}
                                 height={40}
                                 className="object-contain"
@@ -83,8 +83,8 @@ const Footer = () => {
                         <div className="space-y-3 mb-6">
                             <div className="flex items-center gap-2 text-sm">
                                 <MailIcon />
-                                <a href="mailto:support@QuickFynd.com" className="text-slate-400 hover:text-white transition">
-                                    support@QuickFynd.com
+                                <a href="mailto:support@Brandstored.com" className="text-slate-400 hover:text-white transition">
+                                    support@Brandstored.com
                                 </a>
                             </div>
                             <div className="flex items-center gap-2 text-sm">
@@ -131,7 +131,7 @@ const Footer = () => {
                             ))}
                         </div>
                         <p className="text-sm text-slate-500 text-center w-full">
-                            © {new Date().getFullYear()} QuickFynd. All rights reserved.
+                            © {new Date().getFullYear()} Brandstored. All rights reserved.
                         </p>
                     </div>
                 </div>

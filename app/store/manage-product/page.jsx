@@ -20,7 +20,7 @@ export default function StoreManageProducts() {
 
     const { user, getToken } = useAuth();
 
-    const currency = process.env.NEXT_PUBLIC_CURRENCY_SYMBOL || '₹'
+    const currency = process.env.NEXT_PUBLIC_CURRENCY_SYMBOL || 'AED'
 
     const [loading, setLoading] = useState(true)
     const [products, setProducts] = useState([])

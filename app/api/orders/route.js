@@ -78,10 +78,9 @@ export async function POST(request) {
                 if (!guestInfo.name) missingFields.push('name');
                 if (!guestInfo.email) missingFields.push('email');
                 if (!guestInfo.phone) missingFields.push('phone');
-                if (!guestInfo.address && !guestInfo.street) missingFields.push('address');
                 if (!guestInfo.city) missingFields.push('city');
-                if (!guestInfo.state) missingFields.push('state');
-                if (!guestInfo.country) missingFields.push('country');
+                if (!guestInfo.district) missingFields.push('district');
+                if (!guestInfo.street && !guestInfo.address) missingFields.push('street');
             }
             console.log('ORDER API DEBUG: guestInfo received:', guestInfo);
             console.log('ORDER API DEBUG: missingFields:', missingFields);
@@ -198,29 +197,24 @@ export async function POST(request) {
                 );
                 
                 // Only create and assign guest address if address fields are present
-                if (guestInfo.address || guestInfo.street) {
+                if (guestInfo.street || guestInfo.address) {
                     const guestAddress = await Address.create({
                         userId: 'guest',
                         name: guestInfo.name,
                         email: guestInfo.email,
                         phone: guestInfo.phone,
-                        street: guestInfo.address || guestInfo.street,
-                        city: guestInfo.city || 'Guest',
-                        state: guestInfo.state || 'Guest',
-                        zip: guestInfo.zip || '000000',
-                        country: guestInfo.country || 'UAE'
+                        street: guestInfo.street || guestInfo.address,
+                        city: guestInfo.city,
+                        district: guestInfo.district
                     });
                     orderData.addressId = guestAddress._id.toString();
                     orderData.shippingAddress = {
                         name: guestInfo.name,
                         email: guestInfo.email,
                         phone: guestInfo.phone,
-                        street: guestInfo.address || guestInfo.street,
-                        city: guestInfo.city || 'Guest',
-                        state: guestInfo.state || 'Guest',
-                        zip: guestInfo.zip || '000000',
-                        country: guestInfo.country || 'UAE',
-                        district: guestInfo.district || ''
+                        street: guestInfo.street || guestInfo.address,
+                        city: guestInfo.city,
+                        district: guestInfo.district
                     };
                 }
                 orderData.isGuest = true;
@@ -257,10 +251,7 @@ export async function POST(request) {
                             phone: address.phone,
                             street: address.street,
                             city: address.city,
-                            state: address.state,
-                            zip: address.zip,
-                            country: address.country,
-                            district: address.district || ''
+                            district: address.district
                         };
                     }
                 } else if (addressData && addressData.street) {
@@ -272,10 +263,7 @@ export async function POST(request) {
                         phone: addressData.phone,
                         street: addressData.street,
                         city: addressData.city,
-                        state: addressData.state,
-                        zip: addressData.zip,
-                        country: addressData.country,
-                        district: addressData.district || ''
+                        district: addressData.district
                     });
                     orderData.addressId = newAddress._id.toString();
                     orderData.shippingAddress = {
@@ -284,10 +272,7 @@ export async function POST(request) {
                         phone: addressData.phone,
                         street: addressData.street,
                         city: addressData.city,
-                        state: addressData.state,
-                        zip: addressData.zip,
-                        country: addressData.country,
-                        district: addressData.district || ''
+                        district: addressData.district
                     };
                 }
                 console.log('FINAL orderData before Order.create:', JSON.stringify(orderData, null, 2));
@@ -360,7 +345,7 @@ export async function POST(request) {
                 payment_method_types: ['card'],
                 line_items: [{
                     price_data: {
-                        currency: '₹',
+                        currency: 'AED',
                         product_data: { name: 'Order' },
                         unit_amount: Math.round(fullAmount * 100)
                     },

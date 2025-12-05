@@ -6,7 +6,7 @@ export default function PrivacyPolicyPage() {
       <div className="max-w-3xl mx-auto px-4 py-10 min-h-[60vh]">
         <h1 className="text-3xl font-bold text-gray-900 mb-2">Privacy Policy</h1>
         <p className="text-gray-600 mb-8">
-          This Privacy Policy explains how QuickFynd.com collects, uses, stores, and protects your personal information
+          This Privacy Policy explains how Brandstored.com collects, uses, stores, and protects your personal information
           when you use our website and services.
         </p>
 
@@ -65,7 +65,7 @@ export default function PrivacyPolicyPage() {
             <h2 className="font-semibold text-gray-900 mb-2">6. Your Rights</h2>
             <p className="text-gray-700">
               Depending on local laws, you may request access, correction, deletion, or restriction of your
-              personal data. To make a request, please contact us at: <strong>support@QuickFynd.com</strong>.
+              personal data. To make a request, please contact us at: <strong>support@Brandstored.com</strong>.
             </p>
           </section>
 

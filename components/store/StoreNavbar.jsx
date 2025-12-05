@@ -22,7 +22,7 @@ const StoreNavbar = ({ storeInfo }) => {
             <Link href="/store" className="relative text-4xl font-semibold text-slate-700">
                   <Image
                               src={Logo}  
-                              alt="Quickfynd Logo"
+                              alt="Brandstored Logo"
                               width={180}
                               height={48}
                               className="object-contain"

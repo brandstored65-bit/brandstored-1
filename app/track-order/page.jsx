@@ -232,10 +232,10 @@ export default function TrackOrderPage() {
                         <div className="flex-1">
                           <h4 className="font-medium text-slate-800">{product.name || 'Product'}</h4>
                           <p className="text-sm text-slate-600 mt-1">Quantity: {item.quantity}</p>
-                          <p className="text-sm text-slate-600">Price: ₹{(item.price || 0).toFixed(2)}</p>
+                          <p className="text-sm text-slate-600">Price: AED{(item.price || 0).toFixed(2)}</p>
                         </div>
                         <div className="text-right">
-                          <p className="font-semibold text-slate-800">₹{((item.price || 0) * (item.quantity || 0)).toFixed(2)}</p>
+                          <p className="font-semibold text-slate-800">AED{((item.price || 0) * (item.quantity || 0)).toFixed(2)}</p>
                         </div>
                       </div>
                     )
@@ -244,7 +244,7 @@ export default function TrackOrderPage() {
                 <div className="mt-4 pt-4 border-t border-slate-200">
                   <div className="flex justify-between text-slate-800 font-semibold">
                     <span>Total:</span>
-                    <span>₹{(order.total || 0).toFixed(2)}</span>
+                    <span>AED{(order.total || 0).toFixed(2)}</span>
                   </div>
                 </div>
               </div>

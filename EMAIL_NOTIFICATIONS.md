@@ -54,14 +54,14 @@ This application sends automated emails to customers for various events using Re
 RESEND_API_KEY=re_CVyyMDU5_7AQJkrZe2qKq9593VBaApfpA
 EMAIL_FROM=onboarding@resend.dev
 NEXT_PUBLIC_APP_URL=http://localhost:3000
-NEXT_PUBLIC_ADMIN_EMAIL=quickfynd.com@gmail.com
+NEXT_PUBLIC_ADMIN_EMAIL=Brandstored.com@gmail.com
 ```
 
 ### Email Service
 - **Provider:** Resend (https://resend.com)
 - **Package:** `resend` (already installed)
 - **From Address:** Currently using `onboarding@resend.dev` (Resend default)
-- **Note:** For production, verify your domain with Resend to use custom email like `noreply@quickfynd.com`
+- **Note:** For production, verify your domain with Resend to use custom email like `noreply@Brandstored.com`
 
 ## Email Templates
 
@@ -129,9 +129,9 @@ Content-Type: application/json
 
 1. **Verify Domain with Resend:**
    - Go to https://resend.com/domains
-   - Add your domain (e.g., quickfynd.com)
+   - Add your domain (e.g., Brandstored.com)
    - Add DNS records as instructed
-   - Update `EMAIL_FROM` to `noreply@quickfynd.com`
+   - Update `EMAIL_FROM` to `noreply@Brandstored.com`
 
 2. **Update App URL:**
    - Change `NEXT_PUBLIC_APP_URL` to your production domain
@@ -178,4 +178,4 @@ Potential additions:
 
 For email-related issues:
 - Resend Documentation: https://resend.com/docs
-- Contact: quickfynd.com@gmail.com
+- Contact: Brandstored.com@gmail.com

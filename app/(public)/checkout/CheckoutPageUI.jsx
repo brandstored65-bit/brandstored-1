@@ -32,7 +32,6 @@ export default function CheckoutPage() {
     street: '',
   });
 
-  // For India state/district dropdowns
   const keralaDistricts = indiaStatesAndDistricts.find(s => s.state === 'Kerala')?.districts || [];
   const [districts, setDistricts] = useState(keralaDistricts);
   const [placingOrder, setPlacingOrder] = useState(false);
@@ -302,7 +301,7 @@ export default function CheckoutPage() {
                     <div className="flex-1 min-w-0">
                       <div className="font-semibold text-gray-900 truncate">{item.name}</div>
                       <div className="text-xs text-gray-500 truncate">{item.brand || ''}</div>
-                      <div className="text-xs text-gray-400">₹ {item.price.toLocaleString()}</div>
+                      <div className="text-xs text-gray-400">AED {item.price.toLocaleString()}</div>
                     </div>
                     <div className="flex flex-col items-center gap-1">
                       <div className="flex items-center gap-1">
@@ -333,7 +332,7 @@ export default function CheckoutPage() {
                   <div className="font-semibold text-green-900">{shipping === 0 ? 'Free Shipping' : 'Standard Shipping'}</div>
                   <div className="text-xs text-gray-600">Delivered within {shippingSetting?.estimatedDays || '2-5'} business days</div>
                 </div>
-                <div className="font-bold text-green-900 text-lg">{shipping === 0 ? 'Free' : `₹ ${shipping.toLocaleString()}`}</div>
+                <div className="font-bold text-green-900 text-lg">{shipping === 0 ? 'Free' : `AED ${shipping.toLocaleString()}`}</div>
               </div>
             </div>
             {/* Shipping Details Section */}
@@ -380,8 +379,8 @@ export default function CheckoutPage() {
                     <div className="text-gray-800 text-sm">{addressList[0].city}, {addressList[0].state}, {addressList[0].country}</div>
                     <div className="text-orange-500 text-sm font-semibold">{addressList[0].phoneCode} {addressList[0].phone}</div>
                     <div className="flex flex-col gap-1 mt-2 text-xs text-gray-700">
-                      <span>Total: <span className="font-bold">₹ {subtotal.toLocaleString()}</span></span>
-                      <span className="text-gray-500">Delivery charge: <span className="font-bold">₹ {shipping.toLocaleString()}</span></span>
+                      <span>Total: <span className="font-bold">AED {subtotal.toLocaleString()}</span></span>
+                      <span className="text-gray-500">Delivery charge: <span className="font-bold">AED {shipping.toLocaleString()}</span></span>
                     </div>
                   </div>
                   <div className="flex flex-col gap-2 ml-4">
@@ -556,16 +555,16 @@ export default function CheckoutPage() {
           <h2 className="font-bold text-lg mb-2 text-gray-900">Order details</h2>
           <div className="flex justify-between text-sm text-gray-900 mb-2">
             <span>Items</span>
-            <span>₹ {subtotal.toLocaleString()}</span>
+            <span>AED {subtotal.toLocaleString()}</span>
           </div>
           <div className="flex justify-between text-sm text-gray-900 mb-2">
             <span>Shipping &amp; handling</span>
-            <span>{shipping > 0 ? `₹ ${shipping.toLocaleString()}` : '₹ 0'}</span>
+            <span>{shipping > 0 ? `AED ${shipping.toLocaleString()}` : 'AED 0'}</span>
           </div>
           <hr className="my-2" />
           <div className="flex justify-between font-bold text-base text-gray-900 mb-4">
             <span>Total</span>
-            <span>₹ {total.toLocaleString()}</span>
+            <span>AED {total.toLocaleString()}</span>
           </div>
           <button
             type="submit"

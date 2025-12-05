@@ -5,8 +5,8 @@ export default function CancellationAndRefunds() {
 
       <p className="mb-4">
         This Cancellation & Refunds Policy applies to all purchases made on
-        <strong> QuickFynd.com</strong>, operating under the <strong>Nilaas</strong> brand.
-        QuickFynd is an e-commerce platform delivering products across Kerala.
+        <strong> Brandstored.com</strong>, operating under the <strong>Nilaas</strong> brand.
+        Brandstored is an e-commerce platform delivering products across Kerala.
       </p>
 
       <h2 className="text-xl font-semibold mt-6 mb-2">1. Order Cancellation</h2>
@@ -73,11 +73,11 @@ export default function CancellationAndRefunds() {
       <h2 className="text-xl font-semibold mt-6 mb-2">6. Contact Us</h2>
       <p className="mb-2">For cancellations, returns, or refund assistance:</p>
 
-      <p className="mb-1"><strong>Email:</strong> support@quickfynd.com</p>
-      <p className="mb-1"><strong>Website:</strong> www.quickfynd.com</p>
+      <p className="mb-1"><strong>Email:</strong> support@Brandstored.com</p>
+      <p className="mb-1"><strong>Website:</strong> www.Brandstored.com</p>
 
       <p className="text-sm text-gray-600">
-        QuickFynd reserves the right to update or modify this policy at any time based on
+        Brandstored reserves the right to update or modify this policy at any time based on
         operational requirements.
       </p>
     </div>

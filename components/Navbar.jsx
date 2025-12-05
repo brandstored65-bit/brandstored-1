@@ -297,7 +297,7 @@ const Navbar = () => {
             
             {/* Logo */}
             <Link href="/" className="flex items-center gap-2 flex-shrink-0">
-              <Image src={Logo} alt="QuickFynd Logo" width={140} height={40} className="object-contain" priority />
+              <Image src={Logo} alt="Brandstored Logo" width={180} height={45} className="object-contain" priority />
             </Link>
           </div>
 
@@ -492,7 +492,7 @@ const Navbar = () => {
               <button
                 type="button"
                 onClick={() => setSignInOpen(true)}
-                className="px-5 py-2 bg-blue-600 hover:bg-blue-700 transition text-white text-sm font-medium rounded-full"
+                className="px-5 py-2 bg-transparent border border-white text-white hover:bg-white/10 transition text-sm font-medium rounded-full"
               >
                 Login
               </button>
@@ -629,7 +629,7 @@ const Navbar = () => {
             >
               {/* Header with Logo and Close Button */}
               <div className="flex justify-between items-center border-b border-gray-200 pb-4">
-                <Image src={Logo} alt="QuickFynd Logo" width={120} height={35} className="object-contain" />
+                <Image src={Logo} alt="Brandstored Logo" width={120} height={35} className="object-contain" />
                 <button onClick={() => setMobileMenuOpen(false)} className="p-1 hover:bg-gray-100 rounded-full transition">
                   <X size={24} className="text-gray-600" />
                 </button>

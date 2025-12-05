@@ -6,7 +6,7 @@ export default function ShippingPolicyPage() {
       <div className="max-w-3xl mx-auto px-4 py-10 min-h-[60vh]">
         <h1 className="text-3xl font-bold text-gray-900 mb-2">Shipping & Delivery Policy</h1>
         <p className="text-gray-600 mb-8">
-          This Shipping & Delivery Policy explains how orders placed on QuickFynd.com are processed, shipped, and delivered.
+          This Shipping & Delivery Policy explains how orders placed on Brandstored.com are processed, shipped, and delivered.
         </p>
 
         <div className="space-y-6 bg-white border border-gray-200 rounded-xl p-6">
@@ -24,7 +24,7 @@ export default function ShippingPolicyPage() {
           <section>
             <h2 className="font-semibold text-gray-900 mb-2">2. Shipping Methods & Delivery Timeline</h2>
             <p className="text-gray-700">
-              QuickFynd offers Standard and Express delivery across the UAE. Estimated delivery times are shown at checkout 
+              Brandstored offers Standard and Express delivery across the UAE. Estimated delivery times are shown at checkout 
               and depend on your location, product availability, and selected shipping method.
             </p>
             <ul className="list-disc ml-6 text-gray-700 mt-2">
@@ -48,7 +48,7 @@ export default function ShippingPolicyPage() {
             <h2 className="font-semibold text-gray-900 mb-2">4. Tracking Your Order</h2>
             <p className="text-gray-700">
               Once your order is shipped, you will receive a tracking link via email/SMS. You can also check your order’s 
-              status anytime under <strong>My Orders</strong> on QuickFynd.com.
+              status anytime under <strong>My Orders</strong> on Brandstored.com.
             </p>
           </section>
 
@@ -66,7 +66,7 @@ export default function ShippingPolicyPage() {
             <h2 className="font-semibold text-gray-900 mb-2">6. Damaged, Missing, or Wrong Items</h2>
             <p className="text-gray-700">
               If your order arrives damaged, incomplete, or incorrect, please contact us within <strong>48 hours</strong> at 
-              <strong> support@QuickFynd.com</strong> with your order ID and photos/videos of the issue. We will assist you with a 
+              <strong> support@Brandstored.com</strong> with your order ID and photos/videos of the issue. We will assist you with a 
               replacement or solution as quickly as possible.
             </p>
           </section>
@@ -75,7 +75,7 @@ export default function ShippingPolicyPage() {
           <section>
             <h2 className="font-semibold text-gray-900 mb-2">7. Address & Contact Accuracy</h2>
             <p className="text-gray-700">
-              Please ensure that your shipping address and contact details are correct during checkout. QuickFynd is not 
+              Please ensure that your shipping address and contact details are correct during checkout. Brandstored is not 
               responsible for delays or failed deliveries caused by incorrect information provided by the customer.
             </p>
           </section>
@@ -94,7 +94,7 @@ export default function ShippingPolicyPage() {
             <h2 className="font-semibold text-gray-900 mb-2">9. Delays Beyond Our Control</h2>
             <p className="text-gray-700">
               Delivery delays may occur due to weather conditions, customs, courier issues, or unexpected circumstances. 
-              While we do our best to avoid such delays, QuickFynd cannot be held responsible for external disruptions.
+              While we do our best to avoid such delays, Brandstored cannot be held responsible for external disruptions.
             </p>
           </section>
 
@@ -102,8 +102,8 @@ export default function ShippingPolicyPage() {
           <section>
             <h2 className="font-semibold text-gray-900 mb-2">10. International Shipping</h2>
             <p className="text-gray-700">
-              Currently, QuickFynd ships only within the UAE. International shipping will be added in the future, and 
-              updates will be posted on QuickFynd.com.
+              Currently, Brandstored ships only within the UAE. International shipping will be added in the future, and 
+              updates will be posted on Brandstored.com.
             </p>
           </section>
 
@@ -114,8 +114,8 @@ export default function ShippingPolicyPage() {
               For questions related to shipping or delivery, please contact us at:
             </p>
             <p className="text-gray-700 mt-2">
-              📧 <strong>support@QuickFynd.com</strong><br />
-              🌐 <strong>www.QuickFynd.com</strong>
+              📧 <strong>support@Brandstored.com</strong><br />
+              🌐 <strong>www.Brandstored.com</strong>
             </p>
           </section>
 
