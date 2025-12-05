@@ -24,18 +24,12 @@ export default function CheckoutPage() {
   const products = useSelector((state) => state.product.list);
 
   const [form, setForm] = useState({
-    addressId: "",
-    payment: "cod",
-    phoneCode: '+91',
-    country: 'India',
-    state: 'Kerala',
-    district: '',
-    street: '',
-    city: '',
-    pincode: '',
     name: '',
     email: '',
     phone: '',
+    city: '',
+    district: '',
+    street: '',
   });
 
   // For India state/district dropdowns
@@ -520,8 +514,8 @@ export default function CheckoutPage() {
                 </div>
               )}
               <h2 className="text-xl font-bold mb-2 text-gray-900">Payment methods</h2>
-              <div className="flex flex-col gap-2">
-                <label className="flex items-center gap-2 cursor-pointer">
+              <div className="bg-white border border-gray-200 rounded-xl shadow-sm p-6 mb-4">
+                <label className="flex items-center gap-3 cursor-pointer">
                   <input
                     type="radio"
                     name="payment"
@@ -530,9 +524,12 @@ export default function CheckoutPage() {
                     onChange={handleChange}
                     className="accent-red-600 w-5 h-5"
                   />
-                  <span className="font-semibold text-gray-900">Cash on Delivery</span>
+                  <span className="font-semibold text-red-600 flex items-center gap-2">
+                    <svg width="24" height="24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-red-600"><rect x="2" y="6" width="20" height="12" rx="2"/><path d="M6 10v4"/><path d="M10 10v4"/><path d="M14 10v4"/><path d="M18 10v4"/></svg>
+                    Cash on Delivery
+                  </span>
                 </label>
-                {/* Add more payment methods here if needed */}
+                <div className="ml-8 mt-2 text-gray-600 text-sm">Cash on Delivery</div>
               </div>
             </form>
           </div>
