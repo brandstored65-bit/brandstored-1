@@ -6,7 +6,7 @@ import React, { useEffect, useMemo, useState } from 'react'
 import Link from 'next/link'
 
 // Local fallback images
-import Mainslider1 from '../assets/herobanner/Banner A 3.webp'
+import Mainslider1 from '../assets/herobanner/Banner A 2.webp'
 import Mainslider2 from '../assets/herobanner/Banner A 2.webp'
 import MainSlider3 from '../assets/herobanner/Banner A 1.webp'
 import SubBanner1 from '../assets/herobanner/Banner B 1.webp'
@@ -45,17 +45,7 @@ const Hero = () => {
       buttonText: '',
       buttonLink: '#',
     },
-    {
-      color: 'from-blue-200 to-blue-300',
-      tagColor: 'bg-blue-600',
-      tagBg: 'bg-blue-300',
-      textColor: 'text-blue-600',
-      image: Mainslider2?.src || Mainslider2,
-      title: '',
-      price: 9.9,
-      buttonText: '',
-      buttonLink: '#',
-    },
+   
     {
       color: 'from-orange-200 to-orange-300',
       tagColor: 'bg-orange-600',

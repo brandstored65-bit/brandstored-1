@@ -279,7 +279,7 @@ const Navbar = () => {
       )}
 
       {/* Original Full Navbar (Hidden on mobile for non-home pages) */}
-      <nav className={`relative z-50 shadow-sm ${!isHomePage ? 'hidden lg:block' : ''}`} style={{ backgroundColor: '#2874f0;', borderBottom: '1px solid rgba(0,0,0,0.1)' }}>
+      <nav className={`relative z-50 shadow-sm ${!isHomePage ? 'hidden lg:block' : ''}`} style={{ backgroundColor: '#B91519;', borderBottom: '1px solid rgba(0,0,0,0.1)' }}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6">
         <div className="flex items-center justify-between py-3 transition-all">
 

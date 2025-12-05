@@ -33,7 +33,7 @@ function PublicLayoutAuthed({ children }) {
     return (
         <div className="flex flex-col min-h-screen">
             <GuestOrderLinker />
-            <TopBarNotification />
+            {/* <TopBarNotification /> */}
             {/* <Banner />/ */}
             <Navbar />
             <main className={`flex-1 ${isHomePage ? 'pb-8' : 'pb-20'} lg:pb-0`}>{children}</main>
