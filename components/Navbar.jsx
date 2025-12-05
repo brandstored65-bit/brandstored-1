@@ -11,7 +11,7 @@ console.log("Firebase UID:", getAuth().currentUser?.uid);
 import Image from 'next/image';
 import axios from "axios";
 import toast from "react-hot-toast";
-import Logo from "../assets/logo/White1@8x.png";
+import Logo from "../assets/logo/logo3.png";
 import Truck from '../assets/delivery.png';
 import SignInModal from './SignInModal';
 
