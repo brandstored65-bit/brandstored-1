@@ -14,7 +14,7 @@ const BannerSlider = dynamic(() => import("@/components/BannerSlider"), { ssr: t
 const Section3 = dynamic(() => import("@/components/section3"), { ssr: false });
 const Section4 = dynamic(() => import("@/components/section4"), { ssr: false });
 const OriginalBrands = dynamic(() => import("@/components/OriginalBrands"), { ssr: false });
-const QuickFyndCategoryDirectory = dynamic(() => import("@/components/QuickFyndCategoryDirectory"), { ssr: false });
+const BrandstoredCategoryDirectory = dynamic(() => import("@/components/QuickFyndCategoryDirectory"), { ssr: false });
 const KeywordPills = dynamic(() => import("@/components/KeywordPills"), { ssr: false });
 
 export default function Home() {
@@ -104,7 +104,7 @@ export default function Home() {
             )}
             
             <OriginalBrands/>
-            <QuickFyndCategoryDirectory/>
+            <BrandstoredCategoryDirectory/>
             <KeywordPills />
         </>
     );
